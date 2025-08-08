@@ -75,6 +75,16 @@ h2 {
   background-color: #444;
 }
 
+/* Responsividade adicional */
+@media (max-width: 600px) {
+  .skills-list li {
+    
+    margin-top: 15px;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
 .project {
   background-color: #fff;
   border-left: 5px solid #1e1e2f;
