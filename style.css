@@ -39,7 +39,7 @@ header.hero {
 }
 
 .profile-img {
-  border-radius: 50%;
+  border-radius: 5%;
   width: 150px;
   height: 200px;
   object-fit: cover;
@@ -47,43 +47,30 @@ header.hero {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-h2 {
-  color: #1e1e2f;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
-}
-
-.skills-list {
-  list-style: none;
-  padding: 0;
+.skills-container {
   display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que os botões "quebrem" linha em telas menores */
+  gap: 10px; /* Espaçamento entre os botões */
+  justify-content: flex-start; /* Alinhamento horizontal */
 }
 
-.skills-list li a {
-  background-color: #1e1e2f;
+.skill-button {
+  flex: 1 1 120px; /* Faz o botão crescer ou diminuir, mínimo 120px */
+  max-width: 150px; /* Limita o tamanho máximo */
+  padding: 10px 0;
+  text-align: center;
+  background-color: #1a1b2a;
   color: white;
-  padding: 10px 15px;
-  text-decoration: none;
   border-radius: 5px;
-  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.skills-list li a:hover {
-  background-color: #444;
+.skill-button:hover {
+  background-color: #333650;
 }
 
-/* Responsividade adicional */
-@media (max-width: 600px) {
-  .skills-list li {
-    
-    margin-top: 15px;
-    flex: 1 1 100%;
-    text-align: center;
-  }
-}
 
 .project {
   background-color: #fff;
@@ -107,7 +94,7 @@ h2 {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #e91e63;
+  background-color: hsl(202, 82%, 52%);
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -115,7 +102,7 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #c2185b;
+  background-color: hsl(202, 82%, 52%);
 }
 
 footer {
