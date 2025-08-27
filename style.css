@@ -47,30 +47,43 @@ header.hero {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.skills-container {
+h2 {
+  color: #1e1e2f;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Permite que os botões "quebrem" linha em telas menores */
-  gap: 10px; /* Espaçamento entre os botões */
-  justify-content: flex-start; /* Alinhamento horizontal */
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.skill-button {
-  flex: 1 1 120px; /* Faz o botão crescer ou diminuir, mínimo 120px */
-  max-width: 150px; /* Limita o tamanho máximo */
-  padding: 10px 0;
-  text-align: center;
-  background-color: #1a1b2a;
+.skills-list li a {
+  background-color: #1e1e2f;
   color: white;
+  padding: 10px 15px;
+  text-decoration: none;
   border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
-.skill-button:hover {
-  background-color: #333650;
+.skills-list li a:hover {
+  background-color: #444;
 }
 
+/* Responsividade adicional */
+@media (max-width: 600px) {
+  .skills-list li {
+    
+    margin-top: 15px;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
 
 .project {
   background-color: #fff;
